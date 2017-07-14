@@ -1,0 +1,119 @@
+﻿<Window x:Class="TesteiTextSharp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Geração Etiquetas" Height="400" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">           
+            <Grid Name="Configurações">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"></RowDefinition>
+                    <RowDefinition Height="25"></RowDefinition>
+                    <RowDefinition Height="25"></RowDefinition>
+                    <RowDefinition Height="25"></RowDefinition>
+                    <RowDefinition Height="25"></RowDefinition>
+                    <RowDefinition Height="25"></RowDefinition>
+                    <RowDefinition Height="25"></RowDefinition>
+                    <RowDefinition Height="25"></RowDefinition>
+                    <RowDefinition Height="25"></RowDefinition>
+                    <RowDefinition Height="25"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="120"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Margens" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="8" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Text="Esquerda:" Grid.Row="1" Grid.Column="0"></TextBlock>
+                <TextBox Name="txtEsquerda" Grid.Row="1" Grid.Column="1" Margin="3"></TextBox>
+                <TextBlock Text="Direita:" Grid.Row="1" Grid.Column="2"></TextBlock>
+                <TextBox Name="txtDireita" Grid.Row="1" Grid.Column="3" Margin="3"></TextBox>
+                <TextBlock Text="Top:" Grid.Row="1" Grid.Column="4"></TextBlock>
+                <TextBox Name="txtTop" Grid.Row="1" Grid.Column="5" Margin="3"></TextBox>
+                <TextBlock Text="Bottom:" Grid.Row="1" Grid.Column="6"></TextBlock>
+                <TextBox Name="txtBottom" Grid.Row="1" Grid.Column="7" Margin="3"></TextBox>
+                <!--<TextBlock Text="Quatidade de Colunas PDF" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="8" HorizontalAlignment="Center"></TextBlock>-->
+                <!--<TextBlock Text="Número Colunas:" Grid.Row="3" Grid.Column="0" ></TextBlock>
+                <TextBox Name="txtNumeroColunas" Grid.Row="3" Grid.Column="1" Margin="3"></TextBox>-->
+                <!--<TextBlock Text="Tamanhos Diferentes:" Grid.Row="3" Grid.Column="2"></TextBlock>
+                <CheckBox Name="ckbTamanhoDiferente" Grid.Row="3" Grid.Column="3" ></CheckBox>-->
+                <TextBlock Text="Largura Colunas:" Grid.Row="3" Grid.Column="0" ></TextBlock>
+                <TextBox Name="txtLarguraColunas" Grid.Row="3" Grid.Column="1" Margin="3"></TextBox>
+                <!--<TextBlock Text="Tamanho Colunas:" Grid.Row="3" Grid.Column="4" ></TextBlock>
+                <TextBox Name="txtTamanhoColunas1" Grid.Row="3" Grid.Column="5" Margin="3" ></TextBox>
+                <TextBlock Text="Tamanho Colunas:" Grid.Row="3" Grid.Column="6" ></TextBlock>
+                <TextBox Name="txtTamanhoColunas2" Grid.Row="3" Grid.Column="7" Margin="3" ></TextBox>-->
+                <!--<TextBlock Text="Quatidade de Celulas PDF" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="8" HorizontalAlignment="Center"></TextBlock>-->
+                <TextBlock Text="Espaço Colunas:" Grid.Row="5" Grid.Column="0" ></TextBlock>
+                <TextBox Name="txtEspacoColunas" Grid.Row="5" Grid.Column="1" Margin="3"></TextBox>
+                <TextBlock Text="Espaço Linhas:" Grid.Row="5" Grid.Column="2" ></TextBlock>
+                <TextBox Name="txtEspacoLinhas" Grid.Row="5" Grid.Column="3" Margin="3"></TextBox>
+                <TextBlock Text="Título:" Grid.Row="7" Grid.Column="0" ></TextBlock>
+                <TextBox Name="txtFontTitulo" Grid.Row="7" Grid.Column="1" Margin="3"></TextBox>
+                <TextBlock Text="Observação:" Grid.Row="7" Grid.Column="2" ></TextBlock>
+                <TextBox Name="txtFontObservacao" Grid.Row="7" Grid.Column="3" Margin="3"></TextBox>
+                <TextBlock Text="Valor:" Grid.Row="7" Grid.Column="4" ></TextBlock>
+                <TextBox Name="txtFontValor" Grid.Row="7" Grid.Column="5" Margin="3"></TextBox>
+                <TextBlock Text="Gramas:" Grid.Row="7" Grid.Column="6" ></TextBlock>
+                <TextBox Name="txtFontGramas" Grid.Row="7" Grid.Column="7" Margin="3"></TextBox>
+                <TextBlock Text="Lote:" Grid.Row="7" Grid.Column="8" ></TextBlock>
+                <TextBox Name="txtFontLote" Grid.Row="7" Grid.Column="9" Margin="3"></TextBox>
+                <TextBlock Text="Validade:" Grid.Row="7" Grid.Column="10" ></TextBlock>
+                <TextBox Name="txtFontValidade" Grid.Row="7" Grid.Column="11" Margin="3"></TextBox>
+                <TextBlock Text="Produtos:" Grid.Row="9" Grid.Column="0" ></TextBlock>
+                <TextBox Name="txtFontProdutos" Grid.Row="9" Grid.Column="1" Margin="3"></TextBox>
+                <TextBlock Text="Contagem Produtos:" Grid.Row="9" Grid.Column="2" ></TextBlock>
+                <TextBox Name="txtFontContagemProdutos" Grid.Row="9" Grid.Column="3" Margin="3"></TextBox>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"></RowDefinition>
+                <RowDefinition Height="25"></RowDefinition>
+                <RowDefinition Height="25"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Alinhamento Coluna 1:" Grid.Row="0" Grid.Column="0"/>
+            <TextBox Name="txtAlinhamentoColuna1" Grid.Row="0" Grid.Column="1" Margin="3"/>
+            <TextBlock Text="Alinhamento Coluna 2:" Grid.Row="0" Grid.Column="2"></TextBlock>
+            <TextBox Name="txtAlinhamentoColuna2" Grid.Row="0" Grid.Column="3" Margin="3"/>
+            <TextBlock Text="Alinhamento Coluna 3:" Grid.Row="0" Grid.Column="4"></TextBlock>
+            <TextBox Name="txtAlinhamentoColuna3" Grid.Row="0" Grid.Column="5" Margin="3"/>
+            <TextBlock Text="Borda" Grid.Row="0" Grid.Column="6"></TextBlock>
+            <TextBox Name="txtBorda" Grid.Row="0" Grid.Column="7" Margin="3"/>
+            <!--<TextBlock Text="Texto" Grid.Row="0" Grid.Column="6"></TextBlock>
+            <TextBox Name="txtUnidade" Grid.Row="0" Grid.Column="7" Margin="3"/>
+            <TextBlock Text="Texto" Grid.Row="1" Grid.Column="0"></TextBlock>
+            <TextBox Name="txtObservacao" Grid.Row="1" Grid.Column="1" Margin="3"/>
+            <TextBlock Text="Texto" Grid.Row="1" Grid.Column="2"></TextBlock>
+            <TextBox Name="txtDescricao" Grid.Row="1" Grid.Column="3" Margin="3"/>
+            <TextBlock Text="Texto" Grid.Row="1" Grid.Column="4"></TextBlock>
+            <TextBox Name="txtLote" Grid.Row="1" Grid.Column="5" Margin="3"/>
+            <TextBlock Text="Texto" Grid.Row="1" Grid.Column="6"></TextBlock>
+            <TextBox Name="txtValidade" Grid.Row="1" Grid.Column="7" Margin="3"/>-->
+            <Button Content="Etiqueta Vitrine" Grid.Row="2" Grid.Column="0" Click="Button_Click"/>
+            <Button Content="Etiqueta Kits" Grid.Row="2" Grid.Column="3" Click="Button_Click_1"/>
+        </Grid>
+    </Grid>
+</Window>
